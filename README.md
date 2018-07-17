@@ -1,3 +1,3 @@
 # knowledgecaptureanddiscovery.github.io
 
-Page will go here
+Page for kcapdisc gorup
