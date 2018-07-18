@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hexagons.css">
 <!-----><link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +19,7 @@ body, html {
     background-position: center;
     background-size: cover;
     background-image: url("images/background.png");
-    min-height: 100%;
+    min-height: 50%;
     opacity:0.85;
 }
 .w3-bar .w3-button {
@@ -30,14 +31,13 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
-    <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#about" class="w3-bar-item w3-button">RESEARCH INTERESTS</a>
+      <a href="#work" class="w3-bar-item w3-button"></i> PROJECTS</a>
+      <a href="#team" class="w3-bar-item w3-button"></i> PEOPLE</a>
+      <a href="#pricing" class="w3-bar-item w3-button"></i> PUBLICATIONS</a>
+      <a href="#contact" class="w3-bar-item w3-button"></i> DEMO</a>
+      <a href="#contact" class="w3-bar-item w3-button"> NEWS</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -50,16 +50,16 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH INTEREST</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">PEOPLE</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
 </nav>
 
 <!-- Header with full-height image w3-grayscale-min-->
 <header class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-center w3-text-white" style="padding-top:20%">
+  <div class="w3-center w3-text-white" style="padding-top:10%">
     <span class="w3-jumbo w3-hide-small">Knowledge Capture and Discovery </span><br>
   </div> 
   <!--<div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
@@ -73,31 +73,96 @@ body, html {
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
+<div class="w3-container" id="about">
+    <div class="w3-row-padding">
+      <h2>Research Interests</h2>
+      <div>
+      <ul id="hexGrid">
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="">
+                <h1>Intelligent Interfaces</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="">
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="">
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt="">
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="">
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="">
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg" alt="">
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg" alt="">
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="https://farm7.staticflickr.com/6139/5986939269_10721b8017.jpg" alt="">
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div> 
 </div>
 
 <!-- Promo Section - "We know design" -->
