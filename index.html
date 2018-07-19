@@ -82,82 +82,82 @@ body, html {
       <ul id="hexGrid">
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
+              <a class="hexLink" href="ii.html" target="_blank">
                 <img src="images/ii.png" alt="">
                 <h1>Intelligent Interfaces</h1>
-                <p>Some sample text about the article this hexagon leads to. What happens if the text is too much? Will this be able to display all projects?</p>
+                <p>Helping scientist design and plan new experiments</p>
               </a>
             </div>
           </li>
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
+              <a class="hexLink" href="crowd.html" target="_blank">
                 <img src="images/crowd.png" alt="">
                 <h1>Crowdsourcing</h1>
-                <p>Some sample text about the article this hexagon leads to</p>
+                <p>Using domain expert knowledge to create community standards</p>
               </a>
             </div>
           </li>
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
+              <a class="hexLink" href="collab.html" target="_blank">
                 <img src="images/collab.png" alt="">
                 <h1>Collaboration</h1>
-                <p>Some sample text about the article this hexagon leads to</p>
+                <p>Facilitating scientists working together</p>
               </a>
             </div>
           </li>
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
+              <a class="hexLink" href="workflows.html" target="_blank">
                 <img src="images/workflow.png" alt="">
                 <h1>Semantic Workflows</h1>
-                <p>Some sample text about the article this hexagon leads to</p>
+                <p>Formal representations of computational experiments</p>
               </a>
             </div>
           </li>
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
+              <a class="hexLink" href="ml.html" target="_blank">
                 <img src="images/ml.png" alt="">
                 <h1>Machine Learning</h1>
-                <p>Some sample text about the article this hexagon leads to</p>
+                <p>Automating preprocessing and data preparation pipelines</p>
               </a>
             </div>
           </li>
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
+              <a class="hexLink" href="http://opmw.org" target="_blank">
                 <img src="images/provenance.png" alt="">
                 <h1>Provenance and Trust</h1>
-                <p>Some sample text about the article this hexagon leads to</p>
+                <p>Capturing the history of scientific research</p>
               </a>
             </div>
           </li>
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
+              <a class="hexLink" href="vocabularies.html" target="_blank">
                 <img src="images/ontology.png" alt="Ontologies">
                 <h1>Ontologies</h1>
-                <p>Some sample text about the article this hexagon leads to</p>
+                <p>Vocabularies for workflows, provenance and more.</p>
               </a>
             </div>
           </li>
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
-                <img src="images/lod.png" alt="">
+              <a class="hexLink" href="ld" target="_blank">
+                <img src="images/lod.png" alt="LOD">
                 <h1>Linked Data</h1>
-                <p>Some sample text about the article this hexagon leads to</p>
+                <p>Interconnecting scientific knowledge in the Web.</p>
               </a>
             </div>
           </li>
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="#">
+              <a class="hexLink" href="vocabularies.html" target="_blank">
                 <img src="images/discovery.png" alt="">
                 <h1>Scientific Discovery</h1>
-                <p>Some sample text about the article this hexagon leads to</p>
+                <p>Improving exploration and analysis of scientific results</p>
               </a>
             </div>
           </li>
@@ -408,43 +408,11 @@ body, html {
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
