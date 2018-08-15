@@ -1,3 +1,3 @@
 # knowledgecaptureanddiscovery.github.io
 
-Page for kcapdisc gorup
+Page for kcapdisc group
