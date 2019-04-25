@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<title>Knowledge Capture and Discovery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<!-----><link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/background.png");
+    min-height: 50%;
+    opacity:0.85;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="../images/background-mini.png" height="40px"></a>
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html" class="w3-bar-item w3-button">&lt;BACK TO HOME PAGE</a>
+      <a href="#collaborators" class="w3-bar-item w3-button">RECENT COLLABORATORS</a>
+      <a href="#students" class="w3-bar-item w3-button"></i> STUDENTS</a>
+      <a href="#alumni" class="w3-bar-item w3-button"></i> ALUMNI</a>
+      <a href="#other" class="w3-bar-item w3-button"></i> OTHER</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="../index.html" class="w3-bar-item w3-button">Back</a>
+  <a href="#collaborators" onclick="w3_close()" class="w3-bar-item w3-button">RECENT COLLABOTATORS</a>
+  <a href="#students" onclick="w3_close()" class="w3-bar-item w3-button">STUDENTS</a>
+  <a href="#alumni" onclick="w3_close()" class="w3-bar-item w3-button">ALUMNI</a>
+  <a href="#other" onclick="w3_close()" class="w3-bar-item w3-button">OTHER COLLABORATORS</a>
+</nav>
+
+<div class="w3-container" id="collaborators"><!-- w3-light-grey -->
+  <div class="w3-row-padding">
+      <h2 style="padding-top:5%">Recent Collaborators</h2>
+      
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/gil.jpg" alt="Yolanda Gil" style="height:200px"/>
+            
+            <div class="w3-container w3-center">
+              <h3>Yolanda Gil</h3>
+              <p class="w3-opacity">Director of Knowledge Technologies</p>
+              <p><button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/~gil/'"><i class="fa fa-search"></i> Personal page</button></p>
+            </div>
+            
+          </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/collaborators.png" alt="Collaborators" style="height:200px"/>
+            
+            <div class="w3-container w3-center">
+              <h3>More Collaborators</h3>
+              <p class="w3-opacity">Collaborators, members and alumni</p>
+              <p><button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/ikcap/ikcap/people.html'"><i class="fa fa-search"></i> See all collaborators</button></p>
+            </div>
+            
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" id="students"><!-- w3-light-grey -->
+  <div class="w3-row-padding">
+      <h2 style="padding-top:5%">Students</h2>
+      
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/gil.jpg" alt="Yolanda Gil" style="height:200px"/>
+            
+            <div class="w3-container w3-center">
+              <h3>Yolanda Gil</h3>
+              <p class="w3-opacity">Director of Knowledge Technologies</p>
+              <p><button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/~gil/'"><i class="fa fa-search"></i> Personal page</button></p>
+            </div>
+            
+          </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/collaborators.png" alt="Collaborators" style="height:200px"/>
+            
+            <div class="w3-container w3-center">
+              <h3>More Collaborators</h3>
+              <p class="w3-opacity">Collaborators, members and alumni</p>
+              <p><button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/ikcap/ikcap/people.html'"><i class="fa fa-search"></i> See all collaborators</button></p>
+            </div>
+            
+          </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="w3-container" id="alumni"><!-- w3-light-grey -->
+  <div class="w3-row-padding">
+      <h2 style="padding-top:5%">Alumni</h2>
+      
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/gil.jpg" alt="Yolanda Gil" style="height:200px"/>
+            
+            <div class="w3-container w3-center">
+              <h3>Yolanda Gil</h3>
+              <p class="w3-opacity">Director of Knowledge Technologies</p>
+              <p><button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/~gil/'"><i class="fa fa-search"></i> Personal page</button></p>
+            </div>
+            
+          </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/collaborators.png" alt="Collaborators" style="height:200px"/>
+            
+            <div class="w3-container w3-center">
+              <h3>More Collaborators</h3>
+              <p class="w3-opacity">Collaborators, members and alumni</p>
+              <p><button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/ikcap/ikcap/people.html'"><i class="fa fa-search"></i> See all collaborators</button></p>
+            </div>
+            
+          </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="w3-container" id="other"><!-- w3-light-grey -->
+  <div class="w3-row-padding">
+      <h2 style="padding-top:5%">Other</h2>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/collaborators.png" alt="Collaborators" style="height:200px"/>
+            
+            <div class="w3-container w3-center">
+              <h3>More Collaborators</h3>
+              <p class="w3-opacity">Collaborators, members and alumni</p>
+              <p><button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/ikcap/ikcap/people.html'"><i class="fa fa-search"></i> See all collaborators</button></p>
+            </div>
+            
+          </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

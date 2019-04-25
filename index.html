@@ -33,7 +33,8 @@ body, html {
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="images/background-mini.png" height="40px"></a>
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">RESEARCH INTERESTS</a>
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#research" class="w3-bar-item w3-button">RESEARCH INTERESTS</a>
       <a href="#projects" class="w3-bar-item w3-button"></i> PROJECTS</a>
       <a href="#team" class="w3-bar-item w3-button"></i> PEOPLE</a>
       <a href="#publications" class="w3-bar-item w3-button"></i> PUBLICATIONS</a>
@@ -51,7 +52,8 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH INTEREST</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH INTEREST</a>
   <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PEOPLE</a>
   <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATIONS</a>
@@ -77,15 +79,31 @@ body, html {
 <!-- About Section -->
 <div class="w3-container" id="about">
     <div class="w3-row-padding">
+      <h2 style="padding-top:5%; padding-bottom:2%">About</h2>
+      <p>
+        We develop Artificial Intelligence (AI) approaches that use knowledge to accelerate and innovate scientific discovery processes that are unnecessarily carried out manually and inefficiently today.  
+      </p><br/>
+      <p>
+        We work on a variety of AI research areas, such as semantic workflows, human-guided machine learning, interdisciplinary model integration, knowledge networks, controlled crowdsourcing of metadata, and automated hypothesis-driven discovery.  A key theme in our projects is the use of AI technologies for different aspects of data science processes in order to make them more efficient.  
+        </p>
+        <br/>
+      <p>
+        We collaborate with scientists in diverse areas including Earth sciences, neuroscience, genomics and proteomics, agriculture, and economics.
+      </p>      
+     
+    </div> 
+</div>
+<div class="w3-container " id="research">
+    <div class="w3-row-padding">
       <h2 style="padding-top:5%; padding-bottom:2%">Research Interests</h2>
       <div>
       <ul id="hexGrid">
           <li class="hex">
             <div class="hexIn">
-              <a class="hexLink" href="ii.html" target="_blank">
+              <a class="hexLink" href="interests/kcap.html" target="_blank">
                 <img src="images/ii.png" alt="">
-                <h1>Intelligent Interfaces</h1>
-                <p>Helping scientists design and plan new experiments</p>
+                <h1>Knowledge Capture</h1>
+                <p>Representing and acquiring knowledge to be used in AI systems</p>
               </a>
             </div>
           </li>
@@ -167,7 +185,7 @@ body, html {
     </div> 
 </div>
 
-<div class="w3-container w3-light-grey" id="projects"><!-- w3-light-grey -->
+<div class="w3-container " id="projects"><!-- w3-light-grey -->
   <div class="w3-row-padding">
       <h2 style="padding-top:5%">Projects</h2>
       
@@ -401,8 +419,11 @@ body, html {
             
             <div class="w3-container w3-center">
               <h3>Yolanda Gil</h3>
-              <p class="w3-opacity">Director of Knowledge Technologies</p>
-              <p><button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/~gil/'"><i class="fa fa-search"></i> Personal page</button></p>
+              <p class="w3-opacity">Director of the group</p>
+              <p><i class="fa fa-search"></i> <a href="https://www.isi.edu/~gil/">Personal page</a><br/>
+              <i class="fa fa-twitter"></i> <a href="http://www.isi.edu/~varunr">Twitter</a></p>
+              
+              <!--<button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/~gil/'"><i class="fa fa-search"></i> Personal page</button></p>-->
             </div>
             
           </div>
@@ -415,7 +436,10 @@ body, html {
             <div class="w3-container w3-center">
               <h3>Varun Ratnakar</h3>
               <p class="w3-opacity">Research Programmer</p>
-              <p><button class="w3-button  w3-block" onclick="location.href='http://www.isi.edu/~varunr'"><i class="fa fa-search"></i> Personal page</button></p>
+              <p><i class="fa fa-search"></i> <a href="http://www.isi.edu/~varunr">Personal page</a><br/>
+              <br/>
+              <!--<i class="fa fa-twitter"></i> <a href="http://www.isi.edu/~varunr">Twitter</a>-->
+              <!--<button class="w3-button  w3-block" onclick="location.href='http://www.isi.edu/~varunr'"><i class="fa fa-search"></i> Personal page</button>--></p>
             </div>
             
           </div>
@@ -428,7 +452,10 @@ body, html {
             <div class="w3-container w3-center">
               <h3>Daniel Garijo</h3>
               <p class="w3-opacity">Computer Scientist</p>
-              <p><button class="w3-button w3-block" onclick="location.href='http://dgarijo.com'"><i class="fa fa-search"></i> Personal page</button></p>
+              <p>
+              <i class="fa fa-search"></i> <a href="http://dgarijo.com">Personal page</a><br/>
+              <i class="fa fa-twitter"></i> <a href="">Twitter</a>
+              <!--<button class="w3-button w3-block" onclick="location.href='http://dgarijo.com'"><i class="fa fa-search"></i> Personal page</button></p>-->
             </div>
             
           </div>
@@ -441,7 +468,10 @@ body, html {
             <div class="w3-container w3-center">
               <h3>Deborah Khider</h3>
               <p class="w3-opacity">Data Scientist</p>
-              <p><button class="w3-button w3-block" onclick="location.href='https://earth.usc.edu/~khider/'"><i class="fa fa-search"></i> Personal page</button></p>
+              <p>
+              <i class="fa fa-search"></i> <a href="https://earth.usc.edu/~khider/">Personal page</a><br/>
+              <i class="fa fa-twitter"></i> <a href="">Twitter</a>
+              <!--<button class="w3-button w3-block" onclick="location.href='https://earth.usc.edu/~khider/'"><i class="fa fa-search"></i> Personal page</button>--></p>
             </div>
             
           </div>
@@ -491,7 +521,7 @@ body, html {
             <img src="images/collaborators.png" alt="Collaborators" style="height:200px"/>
             
             <div class="w3-container w3-center">
-              <h3>More Collaborators</h3>
+              <h3>Collaborators</h3>
               <p class="w3-opacity">Collaborators, members and alumni</p>
               <p><button class="w3-button w3-block" onclick="location.href='collaborators.html'"><i class="fa fa-search"></i> See all collaborators</button></p>
             </div>
@@ -509,15 +539,37 @@ body, html {
    TO ADD
   
 </div>
+</div>
+</div>
 
-<!-- Modal for full size images on click-->
+<div class="w3-container" id="news">
+  <div class="w3-row-padding">
+      <h2 style="padding-top:5%">News</h2>
+      <div class="w3-row-padding" style="margin-top:64px">
+   TO ADD
+    </div>
+  </div>
+  
+</div>
+
+<div class="w3-container" id="sponsors">
+  <div class="w3-row-padding">
+      <h2 style="padding-top:5%">Sponsors</h2>
+      <div class="w3-row-padding" style="margin-top:64px">
+   TO ADD
+    </div>
+  </div>
+  
+</div>
+
+<!-- Modal for full size images on click
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
-</div>
+</div>-->
 
 <!-- Skills Section 
 <div class="w3-container w3-light-grey w3-padding-64">
@@ -625,10 +677,10 @@ body, html {
       </form>
     </div>
     <div class="w3-half">
-      <!-- Add Google Maps -->
+      <!-- Add Google Maps 
       <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
     </div>
-  </div>
+  </div>-->
 </div>
 
 <!-- Footer -->
