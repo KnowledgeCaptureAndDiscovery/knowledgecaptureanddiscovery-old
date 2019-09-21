@@ -36,6 +36,49 @@ dd.people {
    /* border: 1px solid #999;
     float: left;*/
 }
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
 
 </style>
 <body>
@@ -402,7 +445,7 @@ dd.people {
             <div class="w3-container w3-center">
               <h3>AutoTS</h3>
               <p>Automatic Time Series Analysis</p>
-              <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://knowledgecaptureanddiscovery.github.io/DataNarratives/'"><i class="fa fa-search"></i> See more</button></p>
+              <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='https://github.com/KnowledgeCaptureAndDiscovery/autoTS'"><i class="fa fa-search"></i> See more</button></p>
             </div>
 
           </div>
@@ -558,41 +601,64 @@ dd.people {
   <div class="w3-row-padding">
       <h2 style="padding-top:5%">Publications</h2>
       <div class="w3-row-padding" style="margin-top:64px">
-        <iframe src="https://bibbase.org/show?bib=https://knowledgecaptureanddiscovery.github.io/pubs/0VjjRh%2BI.bib" width="100%" height="500px"
-          frameborder="0" marginwidth="0" marginheight="0" scrolling="yes"
-          style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen></iframe>
-      </div>
-  </div>
-</div>
-
-<div class="w3-container" id="news">
-  <div class="w3-row-padding">
-      <h2 style="padding-top:5%">News</h2>
-      <div class="w3-row-padding" style="margin-top:64px">
    TO ADD
-    </div>
-  </div>
 
 </div>
+</div>
+</div>
+
+<!--<div class="w3-container" id="news">-->
+  <!--<div class="w3-row-padding">-->
+      <!--<h2 style="padding-top:5%">News</h2>-->
+      <!--<div class="w3-row-padding" style="margin-top:64px">-->
+   <!--TO ADD-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
 
 <div class="w3-container" id="join">
   <div class="w3-row-padding">
       <h2 style="padding-top:5%">Join us</h2>
       <div class="w3-row-padding" style="margin-top:64px">
-          <div class="w3-card" align="center">
-            <img src="images/interns.png" alt="Interns" style="width:60%">
-            <div class="w3-container">
-              <!--<h3>Historias de la Teleprisi&oacute;n</h3>-->
-              <p class="w3-opacity">2018 Summer interns, together with Yolanda (center-right) and Daniel (center-down)</p>
-              <p>We are always looking for collaborators including exceptional students who are passionate about AI and scientific research. </p>
-              <h4><strong>If you are interested in a position, send your CV to: </strong>gil at isi.edu or dgarijo at isi.edu<br/>
-                </h4>
+          <!--<div class="w3-card" align="center">-->
+
+          <div class="slideshow-container">
+
+              <div class="mySlides">
+
+                  <img src="images/interns/interns_2019.jpg" style="width:100%">
+                  <div class="text">2019 Summer interns, together with Yolanda,Daniel And Varun.</div>
+              </div>
+
+              <div class="mySlides">
+                  <img src="images/interns/interns_2018.png" style="width:100%">
+                  <div class="text">2018 Summer interns, together with Yolanda (center-right) and Daniel (center-down)</div>
+              </div>
+
+              <div class="mySlides">
+                  <img src="images/interns/interns_2017.png" style="width:100%">
+                  <div class="text">2017 Summer interns</div>
+              </div>
+
+              <div class="mySlides">
+                  <img src="images/interns/interns_2016.png" style="width:100%">
+                  <div class="text">2016 Summer interns, together with Yolanda.</div>
+              </div>
+
+              <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+              <a class="next" onclick="plusDivs(1)">&#10095;</a>
+
+          </div>
+         <center> <p>We are always looking for collaborators including exceptional students who are passionate about AI and scientific research. </p>
+          <h4><strong>If you are interested in a position, send your CV to: </strong>gil at isi.edu or dgarijo at isi.edu<br/>
+          </h4></center>
 
               <!--<p><button class="w3-button w3-light-grey w3-block" onclick="myFunction()"></i> Ver documental</button></p>-->
               <!-- onclick="window.location.href='http://dgarijo.com'"-->
             </div>
     </div>
-  </div>
+  <!--</div>-->
 
 </div>
 
@@ -662,6 +728,24 @@ dd.people {
 
 <!-- Add Google Maps -->
 <script>
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
