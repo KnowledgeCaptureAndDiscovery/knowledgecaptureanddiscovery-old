@@ -9,12 +9,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
     height: 100%;
     line-height: 1.8;
 }
+
+.slideshow-container { max-width: 1000px; position: relative; margin: auto; }
 /* Full height image header */
 .bgimg-1 {
     background-position: center;
@@ -36,6 +39,38 @@ dd.people {
    /* border: 1px solid #999;
     float: left;*/
 }
+
+ .text { color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center; }
+
+
+.mySlides {display:none;}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
 
 </style>
 <body>
@@ -79,7 +114,7 @@ dd.people {
 <header class="bgimg-1 w3-display-container" id="home">
   <div class="w3-center w3-text-white" style="padding-top:10%">
     <span class="w3-jumbo w3-hide-small">Knowledge Capture and Discovery </span><br>
-  </div> 
+  </div>
   <!--<div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <i class="fab fa-facebook-official w3-hover-opacity"></i>
     <i class="fab fa-instagram w3-hover-opacity"></i>
@@ -95,17 +130,17 @@ dd.people {
     <div class="w3-row-padding">
       <h2 style="padding-top:5%; padding-bottom:2%">About</h2>
       <p>
-        We develop Artificial Intelligence (AI) approaches that use knowledge to accelerate and innovate scientific discovery processes that are unnecessarily carried out manually and inefficiently today.  
+        We develop Artificial Intelligence (AI) approaches that use knowledge to accelerate and innovate scientific discovery processes that are unnecessarily carried out manually and inefficiently today.
       </p><br/>
       <p>
-        We work on a variety of AI research areas, such as semantic workflows, human-guided machine learning, interdisciplinary model integration, knowledge networks, controlled crowdsourcing of metadata, and automated hypothesis-driven discovery.  A key theme in our projects is the use of AI technologies for different aspects of data science processes in order to make them more efficient.  
+        We work on a variety of AI research areas, such as semantic workflows, human-guided machine learning, interdisciplinary model integration, knowledge networks, controlled crowdsourcing of metadata, and automated hypothesis-driven discovery.  A key theme in our projects is the use of AI technologies for different aspects of data science processes in order to make them more efficient.
         </p>
         <br/>
       <p>
         We collaborate with scientists in diverse areas including Earth sciences, neuroscience, genomics and proteomics, agriculture, and economics.
-      </p>      
-     
-    </div> 
+      </p>
+
+    </div>
 </div>
 <div class="w3-container " id="research">
     <div class="w3-row-padding">
@@ -175,7 +210,7 @@ dd.people {
               </a>
             </div>
           </li>
-          
+
           <li class="hex">
             <div class="hexIn">
               <a class="hexLink" href="crowd.html" target="_blank">
@@ -185,7 +220,7 @@ dd.people {
               </a>
             </div>
           </li>
-          
+
           <li class="hex">
             <div class="hexIn">
               <a class="hexLink" href="#projects">
@@ -195,224 +230,224 @@ dd.people {
               </a>
             </div>
           </li>
-          
-          
-          
+
+
+
         </ul>
       </div>
-    </div> 
+    </div>
 </div>
 
 <div class="w3-container " id="projects"><!-- w3-light-grey -->
   <div class="w3-row-padding">
       <h2 style="padding-top:5%">Projects</h2>
-      
+
     <div class="w3-row-padding" style="margin-top:64px">
-        <!-- This is one of the entries for projects--> 
+        <!-- This is one of the entries for projects-->
         <span id ="projects1" style="padding-top:5%"></span><!-- To point to certain projects -->
         <div class="w3-col l3 m6 w3-margin-bottom" >
           <div class="w3-card w3-center">
             <img src="images/logos/mint/mint.png" alt="DANA" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>MINT</h3>
               <p>Model Integration through Knowledge-Rich Data and Process Composition</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://mint-project.info/'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/odc/odc.png" alt="ODC" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Organic Data Curation</h3>
               <p>A novel approach to data publishing that requires minimal effort from scientists</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://www.organicdatacuration.org/sandbox/index.php/Main_Page'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/opmw/logo.png" alt="OPMW" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>OPMW-PROV</h3>
               <p>Tracking the provenance of scientific experiments and their executions</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://www.opmw.org'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/dana/dana.png" alt="DANA" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Data Narratives</h3>
               <p>Creating automatic descriptions of experiment results</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://knowledgecaptureanddiscovery.github.io/DataNarratives/'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/linkedearth/linkedEarthAlpha.png" alt="LinkedEarth" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>LinkedEarth</h3>
               <p>Organizing and sharing Earth Science data, with a focus on paleoclimate data.</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://linked.earth/'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/fragflow/ff.png" alt="LinkedEarth" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>FragFlow</h3>
               <p>Finding common fragments in scientific workflows</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='https://github.com/dgarijo/FragFlow'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
-        
-        
+
+
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/gpf/gpf2.png" alt="GPF" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>GPF</h3>
               <p>Guidelines and courses to build the Geoscience Papers of the Future</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://www.scientificpaperofthefuture.org/gpf/'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/disk/disk.png" alt="DISK" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>DISK</h3>
               <p>Helping automate the discovery of scientific knowledge</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://disk-project.org/'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/ontosoft/ontosoft.png" alt="OntoSoft" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>OntoSoft</h3>
               <p>A software metadata registry to describe scientific software in a user-friendly manner</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://ontosoft.org'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/ods/ods.png" alt="ODS" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Organic Data Science</h3>
               <p>Resolving science processes through an open framework that facilitates participation</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://www.organicdatascience.org/'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/spf/logo.png" alt="SPF" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Organic Data Science</h3>
               <p>Encouraging scientists to publish papers with the associated products of their research</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://scientificpaperofthefuture.org'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/p4ml/p4ml.png" alt="P4ML" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>P4ML</h3>
               <p>A Phased Performance-Based Pipeline Planner for Automated Machine Learning</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='https://zenodo.org/record/1251321'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/wings/wings.png" alt="WINGS" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>WINGS</h3>
               <p>A semantic workflow system that assists scientists with the design of computational experiments</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://www.wings-workflows.org/'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
-        
+
+
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/asset/asset.png" alt="ASSET" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>ASSET</h3>
               <p>A new sketching project to accelerate scientific workflows using EarthCube technologies</p>
               <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='https://www.earthcube.org/group/accelerating-scientific-workflows-using-earthcube-technologies-asset'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
+
        <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/logos/linkedearth/linkedEarthAlpha.png" alt="LinkedEarth" style="height:100px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>AutoTS</h3>
               <p>Automatic Time Series Analysis</p>
-              <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://knowledgecaptureanddiscovery.github.io/DataNarratives/'"><i class="fa fa-search"></i> See more</button></p>
+              <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='https://github.com/KnowledgeCaptureAndDiscovery/autoTS'"><i class="fa fa-search"></i> See more</button></p>
             </div>
-            
+
           </div>
         </div>
-        
-        
+
+
     </div>
-    
+
      <h3>Learn more about our software: <a href="https://github.com/KnowledgeCaptureAndDiscovery"><i class="fab fa-github"></i></a>&nbsp; <a href="https://cloud.docker.com/u/kcapd/repository/list"><i class="fab fa-docker"></i></a></h3>
-   
+
   </div>
 </div>
 
@@ -421,27 +456,27 @@ dd.people {
   <div class="w3-row-padding">
       <h2 style="padding-top:5%">People</h2>
       <div class="w3-row-padding" style="margin-top:64px">
-    
+
     <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/gil2.png" alt="Yolanda Gil" style="height:200px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Yolanda Gil</h3>
               <p class="w3-opacity">Director of the group</p>
               <p><i class="fa fa-search"></i> <a href="https://www.isi.edu/~gil/">Personal page</a><br/>
               <i class="fab fa-twitter"></i> <a href="https://twitter.com/yolandagil">Twitter</a></p>
-              
+
               <!--<button class="w3-button w3-block" onclick="location.href='https://www.isi.edu/~gil/'"><i class="fa fa-search"></i> Personal page</button></p>-->
             </div>
-            
+
           </div>
     </div>
-        
+
     <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/varunr.png" alt="Varun Ratnakar" style="height:200px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Varun Ratnakar</h3>
               <p class="w3-opacity">Research Programmer</p>
@@ -450,14 +485,14 @@ dd.people {
               <!--<i class="fab fa-twitter"></i> <a href="http://www.isi.edu/~varunr">Twitter</a>-->
               <!--<button class="w3-button  w3-block" onclick="location.href='http://www.isi.edu/~varunr'"><i class="fa fa-search"></i> Personal page</button>-->
             </div>
-            
+
           </div>
     </div>
-    
+
     <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/dgarijo.jpg" alt="Daniel Garijo" style="height:200px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Daniel Garijo</h3>
               <p class="w3-opacity">Computer Scientist</p>
@@ -466,14 +501,14 @@ dd.people {
               <i class="fab fa-twitter"></i> <a href="https://twitter.com/dgarijov">Twitter</a>
               <!--<button class="w3-button w3-block" onclick="location.href='http://dgarijo.com'"><i class="fa fa-search"></i> Personal page</button></p>-->
             </div>
-            
+
           </div>
     </div>
-    
+
     <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/deborah.jpg" alt="Deborah Khider" style="height:200px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Deborah Khider</h3>
               <p class="w3-opacity">Data Scientist</p>
@@ -482,14 +517,14 @@ dd.people {
               <i class="fab fa-twitter"></i> <a href="https://twitter.com/dkhider">Twitter</a>
               <!--<button class="w3-button w3-block" onclick="location.href='https://earth.usc.edu/~khider/'"><i class="fa fa-search"></i> Personal page</button>--></p>
             </div>
-            
+
           </div>
     </div>
-    
+
     <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/maximiliano.jpg" alt="Maximiliano Osorio" style="height:200px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Maximiliano Osorio</h3>
               <p class="w3-opacity">Research programmer</p>
@@ -497,16 +532,16 @@ dd.people {
                <i class="fa fa-search"></i> <a href="https://mosorio.me/">Personal page</a><br/>
               <i class="fab fa-twitter"></i> <a href="https://twitter.com/SirSpock/">Twitter</a>
               <!--<button class="w3-button w3-block" onclick="location.href='https://mosorio.me/'"><i class="fa fa-search"></i> Personal page</button>--></p>
-              
+
             </div>
-            
+
           </div>
     </div>
-    
+
     <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/shobeir.jpg" alt="Shobeir Fakhraei" style="height:200px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Shobeir Fakhraei</h3>
               <p class="w3-opacity">Computer Scientist</p>
@@ -514,14 +549,14 @@ dd.people {
               <i class="fab fa-twitter"></i> <a href="https://twitter.com/shobeirf">Twitter</a>
               </p>
             </div>
-            
+
           </div>
     </div>
-    
+
     <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/lida.jpg" alt="Shobeir Fakhraei" style="height:200px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Lida Dimitropoulou </h3>
               <p class="w3-opacity">Project Manager</p>
@@ -531,14 +566,14 @@ dd.people {
               <!--<button class="w3-button w3-block" onclick="location.href='https://www.linkedin.com/in/lida-dimitropoulou-b2946142/'"><i class="fa fa-search"></i> Personal page</button>-->
               </p>
             </div>
-            
+
           </div>
     </div>
-    
+
     <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card w3-center">
             <img src="images/collaborators.png" alt="Collaborators" style="height:200px"/>
-            
+
             <div class="w3-container w3-center">
               <h3>Collaborators</h3>
               <p class="w3-opacity">Students, collaborators and alumni</p>
@@ -547,7 +582,7 @@ dd.people {
               <br/>
               <!--<button class="w3-button w3-block" onclick="location.href='collaborators.html'"><i class="fa fa-search"></i> See all collaborators</button>--></p>
             </div>
-            
+
           </div>
     </div>
   </div>
@@ -559,40 +594,60 @@ dd.people {
       <h2 style="padding-top:5%">Publications</h2>
       <div class="w3-row-padding" style="margin-top:64px">
    TO ADD
-  
+
 </div>
 </div>
 </div>
 
-<div class="w3-container" id="news">
-  <div class="w3-row-padding">
-      <h2 style="padding-top:5%">News</h2>
-      <div class="w3-row-padding" style="margin-top:64px">
-   TO ADD
-    </div>
-  </div>
-  
-</div>
+<!--<div class="w3-container" id="news">-->
+  <!--<div class="w3-row-padding">-->
+      <!--<h2 style="padding-top:5%">News</h2>-->
+      <!--<div class="w3-row-padding" style="margin-top:64px">-->
+   <!--TO ADD-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
 
 <div class="w3-container" id="join">
   <div class="w3-row-padding">
       <h2 style="padding-top:5%">Join us</h2>
       <div class="w3-row-padding" style="margin-top:64px">
-          <div class="w3-card" align="center">
-            <img src="images/interns.png" alt="Interns" style="width:60%">
+          <!--<div class="w3-card" align="center">-->
+            <!--<img src="images/interns.png" alt="Interns" style="width:60%">-->
+              <div class="slideshow-container">
+                  <div class="mySlides">
+                      <img  src="images/interns/interns_2019.jpg" style="width:100%">
+                        <div class="text">2019 Summer interns, together with Yolanda ,Daniel And Varun.  </div>
+                  </div>
+                    <div class="mySlides">
+                        <img  src="images/interns/interns_2018.png" style="width:100%">
+                         <div class="text">2018 Summer interns, together with Yolanda and Daniel  </div>
+                    </div>
+                    <div class="mySlides">
+                      <img src="images/interns/interns_2017.png" style="width:100%">
+                         <div class="text">2017 Summer interns  </div>
+                    </div>
+                  <div class="mySlides">
+                      <img src="images/interns/interns_2016.png" style="width:100%">
+                      <div class="text">2016 Summer interns with Yolanda  </div>
+                  </div>
+                  <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+                  <a class="next" onclick="plusDivs(1)">&#10095;</a>
+              </div>
             <div class="w3-container">
               <!--<h3>Historias de la Teleprisi&oacute;n</h3>-->
-              <p class="w3-opacity">2018 Summer interns, together with Yolanda (center-right) and Daniel (center-down)</p>
+
               <p>We are always looking for collaborators including exceptional students who are passionate about AI and scientific research. </p>
               <h4><strong>If you are interested in a position, send your CV to: </strong>gil at isi.edu or dgarijo at isi.edu<br/>
                 </h4>
-             
+
               <!--<p><button class="w3-button w3-light-grey w3-block" onclick="myFunction()"></i> Ver documental</button></p>-->
               <!-- onclick="window.location.href='http://dgarijo.com'"-->
             </div>
     </div>
-  </div>
-  
+  <!--</div>-->
+
 </div>
 
 <div class="w3-container" id="sponsors">
@@ -623,7 +678,7 @@ dd.people {
             <dd class="people"><a href="https://www.nasa.gov/">NASA</a><br>
             <img src="images/sponsors/nasa.png"><br>
             </dd>
-        </div> 
+        </div>
         <div class="w3-col l3 m6">
             <dd class="people"><a href="https://www.iarpa.gov/">IARPA</a><br>
             <img src="images/sponsors/iarpa.png" ><br>
@@ -644,10 +699,10 @@ dd.people {
             <img src="images/sponsors/jplogo.png" width="200px"><br>
             </dd>
         </div>
- 
+
     </div>
   </div>
-  
+
 </div>
 
 
@@ -658,11 +713,32 @@ dd.people {
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
- 
+
 <!-- Add Google Maps -->
 <script>
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
 var mySidebar = document.getElementById("mySidebar");
 
 function w3_open() {
@@ -672,6 +748,7 @@ function w3_open() {
         mySidebar.style.display = 'block';
     }
 }
+
 
 // Close the sidebar with the close button
 function w3_close() {
