@@ -22,8 +22,20 @@ body, html {
     min-height: 50%;
     opacity:0.85;
 }
-.w3-bar .w3-button {
-    padding: 16px;
+
+#myNavbar {
+  height: 56px;
+}
+div.w3-right > .w3-bar-item.w3-button {
+  padding: 15px;
+}
+
+div.w3-col.l3.m6.w3-margin-bottom > div.w3-card.w3-center {
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 </style>
 <body>
@@ -33,7 +45,7 @@ body, html {
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="images/background-mini.png" height="40px"></a>
     <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button">&lt;BACK TO HOME PAGE</a>
+      <a href="index.html" class="w3-bar-item w3-button">&lt; BACK TO HOME PAGE</a>
       <a href="#collaborators" class="w3-bar-item w3-button">RECENT COLLABORATORS</a>
       <a href="#students" class="w3-bar-item w3-button"></i> RECENT STUDENT INTERNS</a>
       <a href="#other" class="w3-bar-item w3-button"></i> OTHER</a>
@@ -57,35 +69,18 @@ body, html {
 </nav>
 
 <div class="w3-container" id="collaborators"><!-- w3-light-grey -->
+  <h2 style="padding-top:5%" id="home">Recent Collaborators</h2>
   <div class="w3-row-padding">
-      <h2 style="padding-top:5%">Recent Collaborators</h2>
-<!--
-      <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-card w3-center">
-              <img src="images/dgarijo.jpg" alt="Daniel Garijo" style="height:200px"/>
-
-              <div class="w3-container w3-center">
-                <h3>Daniel Garijo</h3>
-                <p class="w3-opacity">Computer Scientist</p>
-                <p>
-                <i class="fa fa-search"></i> <a href="http://dgarijo.com">Personal page</a><br/>
-                <i class="fab fa-twitter"></i> <a href="https://twitter.com/dgarijov">Twitter</a>
-                <!--<button class="w3-button w3-block" onclick="location.href='http://dgarijo.com'"><i class="fa fa-search"></i> Personal page</button></p>-->
-              <!--</div>
-
-            </div>
-      </div>-->
-
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card w3-center">
-          <img src="images/dgarijo.jpg" alt="Daniel Garijo" style="height:200px" />
-          <div class="w3-container w3-center">
-            <h3>Daniel Garijo</h3>
-            <p><button class="w3-button w3-block" onclick="location.href='http://dgarijo.com'"><i
-                  class="fa fa-search"></i> Personal page</button></p>
-          </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/dgarijo.jpg" alt="Daniel Garijo" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Daniel Garijo</h3>
+          <p><button class="w3-button w3-block" onclick="location.href='http://dgarijo.com'"><i
+                class="fa fa-search"></i> Personal page</button></p>
         </div>
       </div>
+    </div>
 
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
@@ -121,19 +116,8 @@ body, html {
       </div>
     </div>
   </div>
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card w3-center">
-        <img src="images/collaborators/peckham.jpg" alt="Scott Peckham" style="height:200px" />
-        <div class="w3-container w3-center">
-          <h3>Scott Peckham</h3>
-          <p><button class="w3-button w3-block"
-              onclick="location.href='https://instaar.colorado.edu/people/scott-d-peckham/'"><i class="fa fa-search"></i>
-              Personal page</button></p>
-        </div>
-      </div>
-    </div>
 
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/peckham.jpg" alt="Scott Peckham" style="height:200px" />
@@ -167,8 +151,7 @@ body, html {
         </div>
       </div>
     </div>
-  </div>
-    <div class="w3-row-padding">
+
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/picture-171.jpg" alt="Rajiv Mayani" style="height:200px" />
@@ -180,7 +163,9 @@ body, html {
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/parag_la_bridge.jpg" alt="Parag Mallik" style="height:200px" />
@@ -214,10 +199,19 @@ body, html {
         </div>
       </div>
     </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Michael Steinbach" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Michael Steinbach</h3>
+          <p><br></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="w3-row-padding">
-
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/suzanne.jpg" alt="Suzanne Pierce" style="height:200px" />
@@ -266,10 +260,9 @@ body, html {
         </div>
       </div>
     </div>
+  </div>
 
-    <div>
-    <div class="w3-row-padding">
-
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/vahi.jpg" alt="Karan Vahi" style="height:200px" />
@@ -304,7 +297,6 @@ body, html {
       </div>
     </div>
 
-
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/joeS.jpg" alt="Joel Saltz" style="height:200px" />
@@ -316,9 +308,9 @@ body, html {
         </div>
       </div>
     </div>
-    <div>
-    <div class="w3-row-padding">
+  </div>
 
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/default-person.jpg" alt="Tahsin Kurc" style="height:200px" />
@@ -330,7 +322,6 @@ body, html {
         </div>
       </div>
     </div>
-
 
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
@@ -365,9 +356,9 @@ body, html {
         </div>
       </div>
     </div>
-    <div>
-    <div class="w3-row-padding">
+  </div>
 
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/225px-Phil_E_Bourne.jpg" alt="Philip Bourne" style="height:200px" />
@@ -409,56 +400,9 @@ body, html {
         </div>
       </div>
     </div>
-    <div>
-    <div class="w3-row-padding">
-
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card w3-center">
-        <img src="images/collaborators/mats_rynge.png" alt="Mats Rynge" style="height:200px" />
-        <div class="w3-container w3-center">
-          <h3>Mats Rynge</h3>
-          <p><br></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card w3-center">
-        <img src="images/collaborators/karpatne.jpg" alt="Anuj Karpatne" style="height:200px" />
-        <div class="w3-container w3-center">
-          <h3>Anuj Karpatne</h3>
-          <p><button class="w3-button w3-block" onclick="location.href='http://people.cs.vt.edu/karpatne/'"><i
-                  class="fa fa-search"></i>
-            Personal page</button></p>
-          <p><br></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card w3-center">
-        <img src="images/collaborators/essawy.jpg" alt="Bakinam Essawy" style="height:200px" />
-        <div class="w3-container w3-center">
-          <h3>Bakinam Essawy</h3>
-          <p><br></p>
-          <br>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card w3-center">
-        <img src="images/collaborators/default-person.jpg" alt="Michael Steinbach" style="height:200px" />
-        <div class="w3-container w3-center">
-          <h3>Michael Steinbach</h3>
-          <p><br></p>
-          <br>
-        </div>
-      </div>
-    </div>
-    <div>
-    <div class="w3-row-padding">
-
+  </div>
+  
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card w3-center">
         <img src="images/collaborators/carvalho.jpg" alt="Lucas Augusto Carvalho" style="height:200px" />
@@ -509,14 +453,126 @@ body, html {
             Personal page</button></p>
           <p><br></p>
           <p>
-
             </div>
 
           </div>
     </div>
+  </div>
 
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/karpatne.jpg" alt="Anuj Karpatne" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Anuj Karpatne</h3>
+          <p><button class="w3-button w3-block" onclick="location.href='http://people.cs.vt.edu/karpatne/'"><i
+                  class="fa fa-search"></i>
+            Personal page</button></p>
+          <p><br></p>
+        </div>
+      </div>
+    </div>
 
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/essawy.jpg" alt="Bakinam Essawy" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Bakinam Essawy</h3>
+          <p><br></p>
+          <br>
+        </div>
+      </div>
+    </div>
 
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Belete Berhanu" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Belete Berhanu</h3>
+          <p><br></p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Ethiopia Bisrat" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Ethiopia Bisrat</h3>
+          <p><br></p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Julien Emile-Geay" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Julien Emile-Geay</h3>
+          <p><br></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Nick McKay" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Nick McKay</h3>
+          <p><br></p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Michael Erb" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Michael Erb</h3>
+          <p><br></p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Cody Routson" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Cody Routson</h3>
+          <p><br></p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Jud Partin" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Jud Partin</h3>
+          <p><br></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="images/collaborators/default-person.jpg" alt="Chad Thackeray" style="height:200px" />
+        <div class="w3-container w3-center">
+          <h3>Chad Thackeray</h3>
+          <p><br></p>
+          <br>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -552,6 +608,13 @@ body, html {
         <li>Ken Cheong</li>
         <li>Jungyuj Yang</li>
         <li>Jie Ji</li>
+
+        <li>Haripriya Dharmala</li>
+        <li>Haoyang Chen</li>
+        <li>Ming Yan</li>
+        <li>Detravious Brinkley</li>
+        <li>Lu Niu</li>
+        <li>Tingyu Zhang</li>
       </ul>
   </div>
 

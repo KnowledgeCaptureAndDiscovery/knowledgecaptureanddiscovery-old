@@ -23,9 +23,6 @@ body, html {
     min-height: 50%;
     opacity:0.85;
 }
-.w3-bar .w3-button {
-    padding: 16px;
-}
 dd.people {
     height: 200px;
  /*   background: #ddd;*/
@@ -80,6 +77,38 @@ dd.people {
     text-align: center;
 }
 
+.w3-col > .w3-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    min-height: 290px;
+}
+h3 {
+  line-height: initial;
+}
+
+#myNavbar {
+  height: 56px;
+}
+div.w3-right > .w3-bar-item.w3-button {
+  padding: 15px;
+}
+
+@media (min-width: 993px) {
+  .w3-col.l3 {
+      width: 32.99999%;
+      min-height: 310px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .w3-col.l3 {
+      width: 24.99999%;
+      min-height: 290px;
+  }
+}
 </style>
 <body>
 
